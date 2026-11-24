@@ -195,7 +195,7 @@ footer .vp b{color:var(--amarillo)}
     </div>
     <div class="num">
       <div class="n"><b>3</b><span data-i="anios">años</span></div>
-      <div class="n"><b>19</b><span data-i="fotos">fotos</span></div>
+      <div class="n"><b id="nFotos">39</b><span data-i="fotos">fotos</span></div>
       <div class="n"><b id="nMsg">0</b><span data-i="mensajes">mensajes</span></div>
     </div>
   </div>
@@ -244,6 +244,18 @@ footer .vp b{color:var(--amarillo)}
       <p data-i="c3P">Las sillas se llenaron de abuelas, mamás, tías y vecinos. Y en la fila de sillitas de colores, Joaquín y sus amigos levantaron el pulgar: la fiesta había quedado perfecta.</p>
     </div>
   </div>
+
+  <div class="cap inv reveal">
+    <div class="fotos">
+      <img class="f1" src="img/foto-33.jpg" alt="Foto grupal de todos los niños con Joaquín" data-g="grupo">
+      <img class="f2" src="img/foto-36.jpg" alt="Los niños celebrando con Joaquín" data-g="grupo">
+    </div>
+    <div>
+      <div class="num-cap">04</div>
+      <h3 data-i="c4T">La foto de todos</h3>
+      <p data-i="c4P">Antes de despedirse, todos los niños se reunieron frente al número 3 iluminado. Joaquín arriba con su carrito nuevo, los bebés en brazos y los más pequeños en el piso soplando sus pitos: una foto para el álbum de la familia.</p>
+    </div>
+  </div>
 </section>
 
 <!-- VIDEO -->
@@ -274,6 +286,7 @@ footer .vp b{color:var(--amarillo)}
     <button class="tab" data-f="fiesta" data-i="tFiesta">La fiesta</button>
     <button class="tab" data-f="familia" data-i="tFam">Familia</button>
     <button class="tab" data-f="amigos" data-i="tAmigos">Amigos</button>
+    <button class="tab" data-f="grupo" data-i="tGrupo">Todos juntos</button>
   </div>
   <div class="gal" id="gal"></div>
 </section>
@@ -321,6 +334,8 @@ const FOTOS=[
  {n:12,g:'decoracion'},{n:11,g:'decoracion'},{n:6,g:'decoracion'},{n:7,g:'decoracion'},{n:8,g:'decoracion'},{n:9,g:'decoracion'},{n:10,g:'decoracion'},
  {n:1,g:'fiesta'},{n:2,g:'fiesta'},{n:3,g:'fiesta'},
  {n:4,g:'familia'},{n:5,g:'familia'},
+ {n:33,g:'grupo'},{n:34,g:'grupo'},{n:37,g:'grupo'},{n:38,g:'grupo'},{n:35,g:'grupo'},{n:36,g:'grupo'},{n:39,g:'grupo'},
+ {n:30,g:'decoracion'},{n:29,g:'decoracion'},{n:25,g:'decoracion'},{n:26,g:'decoracion'},{n:28,g:'decoracion'},{n:20,g:'decoracion'},{n:21,g:'decoracion'},{n:22,g:'decoracion'},{n:23,g:'decoracion'},{n:24,g:'decoracion'},{n:27,g:'decoracion'},{n:31,g:'decoracion'},{n:32,g:'decoracion'},
  {n:15,g:'amigos'},{n:13,g:'amigos'},{n:14,g:'amigos'},{n:16,g:'amigos'},{n:17,g:'amigos'},{n:18,g:'amigos'},{n:19,g:'amigos'}
 ].map(f=>({...f,src:`img/foto-${String(f.n).padStart(2,'0')}.jpg`}));
 
@@ -335,7 +350,7 @@ const T={
   c3T:'Family and friends',c3P:'The chairs filled up with grandmothers, moms, aunts and neighbors. And on the row of colorful little chairs, Joaquín and his friends gave a thumbs-up: the party was perfect.',
   vidK:'On video',vidT:'Joaquín\'s friends',vidP:'Sitting on their colorful chairs, Joaquín and his little friends followed the entertainer\'s game with their hands up. Press play and live it again.',
   compartir:'Share this memory',galK:'Album',galT:'All the photos',galP:'Tap any photo to see it big and swipe to the next one.',
-  tTodas:'All',tDeco:'Birthday boy',tFiesta:'The party',tFam:'Family',tAmigos:'Friends',
+  tTodas:'All',tDeco:'Birthday boy',tFiesta:'The party',tFam:'Family',tAmigos:'Friends',tGrupo:'All together',c4T:'The photo of everyone',c4P:'Before saying goodbye, all the kids gathered in front of the glowing number 3. Joaquín on top with his new little car, the babies in arms and the little ones on the floor blowing their party horns: a photo for the family album.',
   msgK:'Wall of love',msgT:'A message for Joaquín',msgP:'Write to Joaquín and his parents, Juan Manuel and Sary. Your message stays on the wall and you can send it on WhatsApp.',
   phNom:'Your name',phTxt:'Happy birthday, Joaquín...',guardar:'Post on the wall',wa:'Send on WhatsApp',
   fT:'Happy birthday, Joaquín',fP:'May these three years be the start of a life full of love, games and friends.',fVp:'A memory made with love by <b>Vibras Positivas HM</b> · 311 770 0431',

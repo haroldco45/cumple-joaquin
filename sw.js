@@ -1,4 +1,4 @@
-const CACHE = 'joaquin-3-v1';
+const CACHE = 'joaquin-3-v2';
 const BASE = ['./', 'index.html', 'manifest.json', 'img/icon-192.png', 'img/icon-512.png', 'img/foto-11.jpg', 'video/poster.jpg'];
 
 self.addEventListener('install', e => {
